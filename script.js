@@ -1,38 +1,39 @@
-// --- 1 Création d'un tableau de citations JJB ---
-// Chaque élément entre guillemets est une citation stockée dans un "tableau".
+// --- 1 Création d'un tableau de lessons sur le JJB ---
+// Chaque élément entre guillemets est une lesson stockée dans un "tableau".
 const lessons = [
-  "Arm Drag = Tirage de bras.",
-  "Closed Guard = Garde fermée",
-  "Le kimura, c’est le roi des soumissions en JJB.",
-  "Toreando Pass = Passage de garde “torreado”",
-  "Armbar (Armlock) = Clé de bras"
+"Montée (Mount, Tate Shiho Gatame): La position de mount (ou montée) en JJB est une position dominante où un combattant est assis sur le torse de son adversaire, contrôlant efficacement ses mouvements. Cette position permet d’appliquer des étranglements ou des clés articulaires tout en limitant les possibilités d’évasion de l’adversaire.",
+
+"Garde fermée (Closed guard) = La garde fermée est une position où le pratiquant en bas entoure la taille de son adversaire avec ses jambes croisées, permettant de le contrôler et de préparer des attaques efficaces. C’est la première garde apprise en JJB, offrant à la fois défense et nombreuses options offensives.",
+  
+"La kimura (Ude Garami): C'est une clé d'épaule en jiu-jitsu brésilien qui consiste à saisir le poignet de l'adversaire et à plier son bras derrière son dos, exerçant une torsion douloureuse pour forcer la soumission. Cette technique polyvalente, souvent apprise depuis la garde fermée, a été popularisée par le judoka Masahiko Kimura lors d'un combat légendaire contre Helio Gracie.",
+
+"Juji Gatame (Clé de Bras, Armbar, Armlock): Le Juji Gatame est une clé de bras en croix, technique de soumission qui vise à hyper-étendre le coude de l’adversaire pour provoquer sa douleur et sa soumission. C’est une technique emblématique en judo et jiu-jitsu, utilisée dès les débuts du combat au sol.",
+  
+"Toreando Pass = Passage de garde “torreado: Le Torreando Pass est une technique rapide et dynamique qui consiste à contrôler les jambes de l'adversaire pour passer sa garde latéralement, en imitant les mouvements d’un toréador. Ce passage s’effectue en saisissant les jambes (généralement au niveau des genoux) et en déplaçant rapidement son corps pour arriver en contrôle latéral”",
 ];
 
+// --- On récupère les éléments HTML ---
+const lessonElement = document.getElementById("lesson");    // <p id="lesson">
+const button = document.getElementById("new-lesson");       // <button id="new-lesson">
 
-// --- 2 On récupère les éléments HTML ---
-// Permet à JS de "cibler" des éléments du document HTML grâce à leur ID.
-const lessonElement = document.getElementById("lesson");      // <p id="quote">
-const button = document.getElementById("new-lesson");        // <button id="new-quote">
+// on commence à la 1ère leçon
+let currentIndex = 0;
 
+// --- Quand on clique sur le bouton on passe à la leçon suivante ---
 
-// --- 3 Fonction qui choisit une citation au hasard ---
-function getRandomLesson() {
-  // Math.random() → génère un nombre entre 0 et 1 (ex: 0.65)
-  // On le multiplie par leson.length (le nombre total de citations)
-  // Math.floor() → arrondit à l'entier inférieur
-  const randomIndex = Math.floor(Math.random() * lessons.length);
-
-  // On renvoie la leçon correspondant à cet index
-  return lessons[randomIndex];
-}
-
-
-// --- 4 Quand on clique sur le bouton ---
 // addEventListener écoute un "événement" (ici : le clic)
 button.addEventListener("click", () => {
-  // On appelle la fonction qui choisit une citation aléatoire
-  const newLesson = getRandomLesson();
 
-  // On remplace le texte du paragraphe <p id="quote">
-  lessonElement.textContent = newLesson;
+ // Affiche la leçon actuelle
+lessonElement.textContent = lessons[currentIndex];
+
+// on passe à la leçon suivante
+currentIndex++;
+
+// Si on a atteint la fin
+  if (currentIndex >= lessons.length) {
+
+    // On revient au début 
+    currentIndex = 0; 
+  }
 });

@@ -1,6 +1,8 @@
 /* Style général du corps de la page */
 body {
   font-family: Arial, sans-serif; /* Choix de la police */
+  font-size: large;
+  line-height: normal;
   background-color: #111;         /* Couleur de fond sombre */
   color: #f0f0f0;                 /* Couleur du texte */
   
@@ -17,7 +19,7 @@ body {
   background: #222;      /* Couleur du fond du cadre */
   padding: 20px;         /* Espace intérieur */
   border-radius: 12px;   /* Coins arrondis */
-  width: 300px;          /* Largeur fixe */
+  width: 500px;          /* Largeur fixe */
 }
 
 /* Style du bouton */
