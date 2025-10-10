@@ -1,0 +1,37 @@
+/* Style général du corps de la page */
+body {
+  font-family: Arial, sans-serif; /* Choix de la police */
+  background-color: #111;         /* Couleur de fond sombre */
+  color: #f0f0f0;                 /* Couleur du texte */
+  
+  /* Centrer le contenu horizontalement et verticalement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hauteur = 100% de la fenêtre */
+}
+
+/* Boîte principale (le "cadre") */
+.container {
+  text-align: center;    /* Centre le texte à l’intérieur */
+  background: #222;      /* Couleur du fond du cadre */
+  padding: 20px;         /* Espace intérieur */
+  border-radius: 12px;   /* Coins arrondis */
+  width: 300px;          /* Largeur fixe */
+}
+
+/* Style du bouton */
+button {
+  margin-top: 15px;       /* Espace au-dessus du bouton */
+  padding: 10px 15px;     /* Taille interne (haut/bas, gauche/droite) */
+  border: none;           /* Supprime la bordure par défaut */
+  border-radius: 6px;     /* Coins arrondis */
+  background-color: #3b82f6; /* Bleu clair */
+  color: white;           /* Texte blanc */
+  cursor: pointer;        /* Curseur "main" au survol */
+}
+
+/* Effet visuel quand on survole le bouton */
+button:hover {
+  background-color: #2563eb; /* Bleu plus foncé */
+}
