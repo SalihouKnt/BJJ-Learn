@@ -11,7 +11,11 @@ const lessons = [
   
 "<strong>Toreando Pass = Passage de garde “torreado:</strong> Le Torreando Pass est une technique rapide et dynamique qui consiste à contrôler les jambes de l'adversaire pour passer sa garde latéralement, en imitant les mouvements d’un toréador. Ce passage s’effectue en saisissant les jambes (généralement au niveau des genoux) et en déplaçant rapidement son corps pour arriver en contrôle latéral”",
 
-"<strong>La Tarikoplata</strong>:C'est une technique de soumission en jiu-jitsu brésilien inventée par Tarik Hopstock. C’est une variante de la Kimura utilisant la jambe pour isoler l’épaule et le coude de l’adversaire, permettant une clé d’épaule puissante et contrôlée. Elle combine des éléments de Kimura et Omoplata avec un angle d’attaque différent, efficace en gi comme en no-gi."
+"<strong>La Tarikoplata</strong>:C'est une technique de soumission en jiu-jitsu brésilien inventée par Tarik Hopstock. C’est une variante de la Kimura utilisant la jambe pour isoler l’épaule et le coude de l’adversaire, permettant une clé d’épaule puissante et contrôlée. Elle combine des éléments de Kimura et Omoplata avec un angle d’attaque différent, efficace en gi comme en no-gi.",
+
+"<strong>La garde De La Riva:</strong> C'est une garde ouverte où le pratiquant entoure la jambe de l’adversaire avec sa propre jambe tout en contrôlant la cheville, le pantalon ou la ceinture pour créer des déséquilibres et lancer des attaques ou des renversements. Elle est très utilisée en compétition pour sa polyvalence et son potentiel offensif.",
+
+"<strong>La demi-garde:</strong> La demi-garde est une position où le pratiquant en bas contrôle une jambe de l’adversaire avec ses propres jambes, tout en ayant l’autre jambe libre, permettant des attaques ou des renversements. C’est une garde polyvalente qui sert de base à de nombreuses transitions offensives et défensives.",
 ];
 
 // --- On récupère les éléments HTML ---
