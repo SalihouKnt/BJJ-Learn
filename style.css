@@ -20,6 +20,7 @@ body {
   padding: 20px;         /* Espace intérieur */
   border-radius: 12px;   /* Coins arrondis */
   width: 500px;          /* Largeur fixe */
+  max-width: 500px;
 }
 
 /* Style du bouton */

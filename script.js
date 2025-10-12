@@ -10,6 +10,8 @@ const lessons = [
 "<strong>Juji Gatame (Clé de Bras, Armbar, Armlock):</strong> Le Juji Gatame est une clé de bras en croix, technique de soumission qui vise à hyper-étendre le coude de l’adversaire pour provoquer sa douleur et sa soumission. C’est une technique emblématique en judo et jiu-jitsu, utilisée dès les débuts du combat au sol.",
   
 "<strong>Toreando Pass = Passage de garde “torreado:</strong> Le Torreando Pass est une technique rapide et dynamique qui consiste à contrôler les jambes de l'adversaire pour passer sa garde latéralement, en imitant les mouvements d’un toréador. Ce passage s’effectue en saisissant les jambes (généralement au niveau des genoux) et en déplaçant rapidement son corps pour arriver en contrôle latéral”",
+
+"<strong>La Tarikoplata</strong>:C'est une technique de soumission en jiu-jitsu brésilien inventée par Tarik Hopstock. C’est une variante de la Kimura utilisant la jambe pour isoler l’épaule et le coude de l’adversaire, permettant une clé d’épaule puissante et contrôlée. Elle combine des éléments de Kimura et Omoplata avec un angle d’attaque différent, efficace en gi comme en no-gi."
 ];
 
 // --- On récupère les éléments HTML ---
